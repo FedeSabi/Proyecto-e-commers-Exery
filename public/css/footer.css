@@ -1,0 +1,634 @@
+
+
+.ourBlog{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    margin-left:60px;
+
+}
+.ourBlog i{
+    background-color:  rgb(255, 171, 126);
+    color: black;
+}
+.ourBlog span{
+    background-color:  rgb(255, 171, 126);
+}
+.titulo{
+    color: white;
+    font-size: 67px;
+    font-weight: bold; /* Valor numérico para un grosor más alto */
+    margin-left: -100px;
+}
+.titulo h1{
+    color: white;
+    Font-size:55em;
+}
+.loremTitulo{
+    display: flex;
+    flex-direction: column;
+    margin-left:-180px;
+    width: 300px;
+}
+.openPage{
+    background-color:  rgb(255, 171, 126);
+    border-radius: 25px;
+    padding: 15px;
+    margin: 25px;
+    width: 150px;
+    cursor: pointer;
+}
+ h2, h3, p, i, ul, li{
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+/*//botones bien diseñados igual que el original!!/*/
+.btsReadMore{
+    background-color:transparent ;
+    color: white;
+    border-radius: 25px;
+    font-family: 'Lato', sans-serif;
+    border: 2px solid;
+    padding: 10px;
+    margin: 15px;
+    width: 120px;
+    height: 40px; 
+    cursor: pointer; 
+}
+.btsReadMore:hover{
+    background-color:white;
+    color: black;
+}
+.margenH3{
+    font-weight: lighter;
+    width: 200px;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    margin: 20px;
+}
+.margenP{
+    width: 250px;
+    font-size: 0.8em;
+    margin-bottom: 30px;
+    margin: 20px;
+}
+.contenedorCards1{
+    display: flex;
+    margin: 80px;
+    margin-top: -10px;
+}
+.cardUno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+.img1{
+    background-image: url("../img/joshua-reddekopp-cNe8GsQR-OQ-unsplash\ \(1\).jpg");
+    height: 230px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius:15px ;
+    text-align:right;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+.btn1{
+    background-color: white;
+    border: none;
+    border-radius:20px ;
+    padding: 8px;
+    width: 80px;
+    height: 40px; 
+}
+.ContenidoUno{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 10px;
+}
+.cardDos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img2{
+    background-image: url("../img/andrew-neel-HqtYwlY9dxs-unsplash.jpg");
+    height: 230px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius:15px ;
+    text-align:right;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+.btn2{
+    background-color: white;
+    border: none;
+    border-radius:20px ;
+    padding: 8px;
+    width: 80px;
+    height: 40px;    
+}
+.ContenidoDos{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 10px;
+}
+.contenedorCards2{
+    display: flex;
+    margin: 80px;
+    margin-top: -70px;
+}
+.cardTres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+.img3{
+    background-image: url("../img/adam-wilson-1QZYZib7eYs-unsplash.jpg");
+    height: 230px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius:15px ;
+    text-align:right;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+.btn3{
+    background-color: white;
+    border: none;
+    border-radius:20px ;
+    padding: 8px;
+    width: 80px;
+    height: 40px;  
+}
+.ContenidoTres{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 10px;
+}
+.cardCuatro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.img4{
+    background-image: url("../img/joshua-reddekopp-cNe8GsQR-OQ-unsplash\ \(1\).jpg");
+    height: 230px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius:15px ;
+    text-align:right;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+.btn4{
+    background-color: white;
+    border: none;
+    border-radius:20px ;
+    padding: 8px;
+    width: 80px;
+    height: 40px;  
+}
+.ContenidoCuatro{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 10px;
+}
+/* footer inicio */
+.contenedorFinal{
+    display: flex;
+    margin-left: 80px;
+    height:250px;
+    width:90%;
+    background-color: rgb(59, 59, 59);
+    border-radius:40px;
+}
+.exery{
+    display: flex;
+    flex-direction: column;
+    margin-left:120px;
+    margin-top: 40px;
+    height:180px;
+    width:50px;
+}
+.exeryTitulo{
+ width: 120px;
+ font-size: 2.5em;
+ color: white;
+}
+.icons{
+    margin-top: 10px;
+    width: 80px;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content:space-between; 
+}
+.helpContenedor{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    justify-content: space-evenly;   
+}
+.help{
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    justify-content:center;
+    height: 100px;
+}
+.help li{
+    color: rgb(115, 115, 115);
+    size: 1em;
+}
+.aboutContenedor{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.about{
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+}
+.about li{
+    color: rgb(115, 115, 115);
+}
+.mobileContenedor{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.mobile{
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+}
+.mobile li{
+    color: rgb(115, 115, 115);
+}
+.arrow{
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+    margin-right: 80px;
+}
+.piePagina{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.privacy{
+    color:rgb(115, 115, 115); 
+}
+
+/* Media Queries */
+
+@media screen and (max-width:1350px){
+    .ourBlog{
+        display: flex;
+        flex-direction: column;
+    } 
+    .loremTitulo{
+        margin: 20px;
+        margin-left: -40px;
+        width: 280px;
+    } 
+    .openPage{
+        margin-left:-50px;
+    }
+    .contenedorCards1{
+        display: flex;
+        flex-direction: column;
+        width: 550px;
+    }
+    .cardUno{
+        width: 550px;
+        margin:auto;
+    }
+    .ContenidoUno{
+        display: flex; 
+    }
+    .margenH3{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedorCards2{
+        display: flex;
+        flex-direction: column;
+        width: 550px;
+    }
+    .cardTres{
+        width: 550px;
+        margin-left:auto;
+    }
+    .cardCuatro{
+        width: 550px;
+        margin-left:auto; 
+    }
+    .exery{
+        display: flex;
+        margin-left: 40px;
+        margin-top: 45px;
+    }
+    .exeryTitulo{
+     font-size: 1.3em;
+    }
+    .icons{
+        margin-top: 20px;
+        width: 40px;
+        font-size: 0.6em;
+        justify-content:space-evenly; 
+    }
+    .helpContenedor{
+        display: flex;
+        margin-left: 80px;
+        font-size: 0.8em;
+    }
+    .aboutContenedor{
+        display: flex;
+        font-size: 0.8em;
+        margin-left: 80px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    .mobileContenedor{
+        display: flex;
+        font-size: 0.8em;
+        margin-left: 80px;
+        margin-right: 40px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    } 
+    .contenedorFinal{
+        display: flex;
+        margin-left:25px;
+        width:700px;
+    }
+    .piePagina{
+        font-size: 0.6em;
+    }
+}
+@media screen and (max-width:1024px){
+.ourBlog{
+        display: flex;
+        flex-direction: column;
+    } 
+    .loremTitulo{
+        margin: 20px;
+        margin-left: -40px;
+        width: 280px;
+    } 
+    .openPage{
+        margin-left:-50px;
+    }
+    .contenedorCards1{
+        display: flex;
+        flex-direction: column;
+        width: 850px;
+    }
+    .cardUno{
+        width: 850px;
+        margin:auto;
+    }
+    .ContenidoUno{
+        display: flex; 
+    }
+    .margenH3{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedorCards2{
+        display: flex;
+        flex-direction: column;
+        width: 850px;
+    }
+    .cardTres{
+        width: 850px;
+        margin-left:auto;
+    }
+    .cardCuatro{
+        width: 850px;
+        margin-left:auto; 
+    }
+    .exery{
+        display: flex;
+        margin-left: 80px;
+        margin-top: 45px;
+    }
+    .exeryTitulo{
+     font-size: 1.3em;
+    }
+    .icons{
+        margin-top: 20px;
+        width: 40px;
+        font-size: 0.6em;
+        justify-content:space-evenly; 
+    }
+    .helpContenedor{
+        display: flex;
+        margin-left: 140px;
+        font-size: 0.8em;
+    }
+    .aboutContenedor{
+        display: flex;
+        font-size: 0.8em;
+        margin-left: 140px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    .mobileContenedor{
+        display: flex;
+        font-size: 0.8em;
+        margin-left: 140px;
+        margin-right: 40px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    } 
+    .contenedorFinal{
+        display: flex;
+        margin-left:25px;
+        width:960px;
+    }
+    .piePagina{
+        font-size: 0.6em;
+    }
+    .arrow{
+        margin-left: 100px;
+    }
+}
+@media(max-width:480px){
+    .ourBlog{
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        height: 200px;
+        margin: auto;   
+    }
+    .titulo{
+        font-size: 2em;
+        margin: auto;
+        margin-top: 40px;
+    } 
+    .loremTitulo{
+        display: flex;
+        flex-direction: column;
+        font-size: 0.5em;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 150px;
+    } 
+    .openPage{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        padding: 5px;
+        margin: auto;
+        width: 100px;
+        font-size: 0.6em;
+    }
+    .contenedorCards1, .contenedorCards2{
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+        width: 200px;
+    }
+    .cardUno, .cardDos, .cardTres, .cardCuatro{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 500px;
+        margin:auto;
+    }
+    .img1, .img2, .img3, .img4{
+        width:320px;
+        margin-bottom: 30px;
+    }
+    .btn1, .btn2, .btn3, .btn4{
+        border-radius:10px ;
+        padding: 6px;
+        width: 60px;
+        height: 30px;   
+        width: 60px;
+        margin-left:auto;
+    }
+    .margenH3{
+        font-weight: lighter;
+        width: 150px;
+        font-size: 0.8em;
+        margin-bottom: 30px;
+        margin: auto;
+    }
+    .margenP{
+        width: 150px;
+        font-size: 0.6em;
+        margin-bottom: 30px;
+        margin: 20px;
+    }
+    .btsReadMore{
+        border-radius: 25px;
+        border: 2px solid;
+        padding: 10px;
+        margin: 25px;
+        width: 120px;
+        height: 40px; 
+    }
+    .contenedorFinal{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
+        width:380px;
+        height: 650px;
+        margin: auto;
+    }
+    .exery{
+        display: flex;
+        justify-content: center;
+        margin-left: 150px;
+        margin-top: 20px;
+    }
+    .exeryTitulo{
+        font-size: 1.8em;
+    }
+    .icons{
+        margin-top: 20px;
+        width: 40px;
+        margin-left: 10px;
+        gap: 5px;
+        font-size: 0.8em;
+        justify-content:space-evenly; 
+    }
+    .helpContenedor{
+        display: flex;
+        height: 30px;
+        margin-left: 120px;
+        font-size: 0.8em;
+    }
+    .help{
+        margin-top: 30px;
+    }
+    .aboutContenedor{
+        display: flex;
+        font-size: 0.8em;
+        margin-left: 120px;
+    }
+    .mobileContenedor{
+        display: flex;
+        font-size: 0.8em;
+        margin-left: 120px;
+        margin-right: 40px;
+        margin-top: -40px;
+    } 
+    .piePagina{
+        width: 220px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 120px;
+        font-size: 0.6em;
+    }
+    .arrow{
+        margin: auto;
+        margin-top: -30px;
+    }
+    .piePagina{
+       display: flex;
+       text-align: center;
+       gap: 10px;
+    }
+    
+}

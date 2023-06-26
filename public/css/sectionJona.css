@@ -1,0 +1,188 @@
+
+
+.lastJona{
+    width: 95%;
+    background-color: white;
+    margin-left: 30px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+   /* object-fit: contain;*/
+}
+
+/* CSS Primer div del section */
+.textoJona{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding-left: 35px;
+    margin: 4em;
+
+}
+
+.tituloJona{
+    display: flex;
+    width: 40%;
+    font-size: 45px;
+    align-items: start;
+    color: black;
+}
+
+.descriptionJona{
+    width: 30%;
+    display:flex;
+    margin-top: 20px;
+    color: black;
+}
+
+.botonProductoJona{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: Center;
+}
+
+.allProductsJona{
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+    margin-left: 10px;
+    background-color: #FDAD82;
+    padding: 5px 15px;
+
+
+}
+
+/*<!-- Parte de card -->*/
+
+.cardsJona{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 10px;
+}
+
+.cardJona{
+    width: 250px;
+    display: flex;
+    margin: 20px;
+    border: none;
+    transition: all 150ms;
+
+}
+
+.carddsJona:hover{
+    transform: scale(1.1);
+
+}
+
+#corazon{
+    position: absolute;
+    left: 85%;
+    font-size: 1.5em;
+    z-index: 1;
+    padding-right: 2px;
+}
+
+.imagenJona{
+    width: 100%;
+    position: relative;
+}
+
+.imagenIconoJona{
+    border: 1px solid gray;
+    border-radius: 30px;
+    background-color: #aaaaaa !important;
+}
+
+.btnAgregarJona{
+    margin: 5px;
+    align-self: flex-end;
+    border-radius: 10px;
+    border: none;
+    background-color: #FDAD82;
+    position: absolute;
+    bottom: 1px
+}
+
+.allProductsJona:hover{
+    background-color: whitesmoke;
+    color: #FDAD82;
+    transition: all 100ms;
+    border: 2px solid #FDAD82;
+}
+
+#agregarJona{
+    align-self: end;
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+.precioJona{
+    margin: 5px 0px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*<-- Section 2 --> */
+
+.sectionFirmaJona{
+    width: 95%;
+    background-color: white;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+.containerFirmaJona{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./imagenes/bolso\ contenedor.jpg");
+    object-fit: contain;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.contenidoJona{
+    text-align: center;
+    color: white;
+}
+
+.texto1Jona{
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.firmaJona{
+    font-size: 48px;
+    font-family: 'Allura', cursiva;
+}
+
+@media (max-width:1150px){
+    .textoJona{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .descriptionJona{
+        display: none;
+        
+    }
+    .tituloJona{
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+    }
+    .botonProductoJona{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: -100px;
+        justify-content: left;
+    }
+}
