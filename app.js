@@ -29,6 +29,18 @@ app.get('/contacto',(req,res) =>{
     res.render('producto1',{mensaje: 'pagina producto1'})
 })
 
+app.get('/producto2',(req,res) =>{
+    res.render('producto2',{mensaje: 'pagina producto2'})
+})
+
+app.get('/producto3',(req,res) =>{
+    res.render('producto3',{mensaje: 'pagina producto3'})
+})
+
+app.get('/producto4',(req,res) =>{
+    res.render('producto4',{mensaje: 'pagina producto4'})
+})
+
 app.use((req,res,next) => {
     res.status(404).render('404',{
         titulo:'404',
