@@ -20,9 +20,13 @@ app.get('/',(req,res)=>{
 app.get('/', (req,res) =>{
     res.send('Mi respuesta desde express')
 })
-
+// formulario de contacto
 app.get('/contacto',(req,res) =>{
     res.render('contacto',{tituloServicios: 'estas en la pagina de servicios dinamico'})
+})
+ //productos
+ app.get('/producto1',(req,res) =>{
+    res.render('producto1',{mensaje: 'pagina producto1'})
 })
 
 app.use((req,res,next) => {
