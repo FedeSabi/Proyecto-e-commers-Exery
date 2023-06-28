@@ -14,10 +14,10 @@ body{
     margin: 20px 50px;
     font-size: 3em;
 }
-.contenedorCard4{
+.contenedorProductoCard4{
     margin-left: 250px;
 }
-.contenedorCard4 h1,p,h3{
+.contenedorProductoCard4 h1,p,h3{
     color: white;
 }
 .menuProducto4{
@@ -34,10 +34,10 @@ body{
 menu a{
     color: white;
 }
-.volver,.inicio, .contacto,.nombreProducto1,.descripcion,.lorem{
+.volver,.inicio, .contacto,.nombreProducto4,.descripcion,.lorem{
     margin: 10px;
 }
-.contenedorCard4{
+.contenedorProductoCard4{
     display: flex;
     flex-direction: row;
     text-align: left;
@@ -45,13 +45,13 @@ menu a{
     width: 70%;
     height: 25%;
 }
-.img4{
+.Productoimg4{
     width: 600px;
     height: 500px;
     margin: 100px 50px;
     border-radius: 20px;  
 }
-.contenidoCard4{
+.contenidoProductoCard4{
   margin-top: 130px;  
 }
 .btnComprar{
@@ -91,12 +91,12 @@ span{
 }
 /* media queries */
 @media screen and (max-width:1920px){
-    .contenedorCard4{
+    .contenedorProductoCard4{
         margin-left: 100px;
         width: 85%;
         height: 35%;
     }
-    .contenidoCard4{
+    .contenidoProductoCard4{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,12 +104,12 @@ span{
     }
 }
 @media screen and (max-width:1280px) {
-    .contenedorCard4{
+    .contenedorProductoCard4{
         margin-left: 200px;
         display: flex;
         flex-direction: column;
     } 
-    .contenidoCard4{
+    .contenidoProductoCard4{
         height: 20px;
         width: 600px;
         display: flex;
@@ -124,12 +124,12 @@ span{
     }
 }
 @media screen and (max-width:800px) {
-    .contenedorCard4{
+    .contenedorProductoCard4{
         margin-left: 30px;
         display: flex;
         flex-direction: column;
     } 
-    .contenidoCard4{
+    .contenidoProductoCard4{
         height: 20px;
         width: 600px;
         display: flex;
@@ -154,18 +154,18 @@ span{
     .menu{
         display: none;
     }
-    .contenedorCard4{
+    .contenedorProductoCard4{
         width: 380px;
         height: 500px;
     }
-    .img4{
+    .Productoimg4{
         width: 380px;
         height: 300px;
         margin: 20px 10px;
         margin-top: 200px;
         border-radius: 20px;  
     }
-    .contenidoCard4{
+    .contenidoProductoCard4{
     
         display: flex;
         flex-direction: column;
