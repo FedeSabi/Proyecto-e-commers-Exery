@@ -373,33 +373,35 @@
     .exery{
         display: flex;
         margin-left: 40px;
-        margin-top: 45px;
+        margin-top: 20px;
     }
     .exeryTitulo{
-     font-size: 1.3em;
+     font-size: 1em;
     }
     .icons{
-        margin-top: 20px;
+        margin-top: 5px;
         width: 40px;
-        font-size: 0.6em;
+        font-size: 0.8em;
         justify-content:space-evenly; 
+        gap: 10px;
+    }
     }
     .helpContenedor{
         display: flex;
-        margin-left: 80px;
+        margin-left: 380px;
         font-size: 0.8em;
     }
     .aboutContenedor{
         display: flex;
         font-size: 0.8em;
-        margin-left: 80px;
+        margin-left: 160px;
         margin-top: 40px;
         margin-bottom: 50px;
     }
     .mobileContenedor{
         display: flex;
         font-size: 0.8em;
-        margin-left: 80px;
+        margin-left: 160px;
         margin-right: 40px;
         margin-top: 40px;
         margin-bottom: 50px;
@@ -407,12 +409,12 @@
     .contenedorFinal{
         display: flex;
         margin-left:25px;
-        width:700px;
+        width:1350px;
     }
     .piePagina{
         font-size: 0.6em;
     }
-}
+
 @media screen and (max-width:1024px){
 .ourBlog{
         display: flex;
@@ -590,16 +592,16 @@
     .exery{
         display: flex;
         justify-content: center;
-        margin-left: 150px;
-        margin-top: 20px;
+        margin-left: -50px;
+        margin-top: -60px;
     }
     .exeryTitulo{
         font-size: 1.8em;
     }
     .icons{
-        margin-top: 20px;
+        margin-top: -10px;
         width: 40px;
-        margin-left: 10px;
+        margin-left: 220px;
         gap: 5px;
         font-size: 0.8em;
         justify-content:space-evenly; 
