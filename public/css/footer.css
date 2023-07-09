@@ -236,7 +236,7 @@
     display: flex;
     flex-direction: column;
     margin-left:20px;
-    margin-top: 10px;
+    margin-top: 20px;
     height:180px;
     width:50px;
 }
@@ -254,6 +254,9 @@
     flex-direction: row;
     align-items: left;
     justify-content:space-between; 
+}
+.contfinal{
+    display: flex;
 }
 .helpContenedor{
     display: flex;
@@ -432,6 +435,7 @@
         display: flex;
         flex-direction: column;
         width: 850px;
+        margin: auto;
     }
     .cardUno{
         width: 850px;
@@ -448,53 +452,58 @@
         display: flex;
         flex-direction: column;
         width: 850px;
+        margin: auto;
     }
     .cardTres{
         width: 850px;
-        margin-left:auto;
+        margin:auto;
     }
     .cardCuatro{
         width: 850px;
-        margin-left:auto; 
+        margin:auto; 
     }
     .exery{
-        display: flex;
-        margin-left: 80px;
-        margin-top: 45px;
+        display:flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
     }
     .exeryTitulo{
      font-size: 1.3em;
+     margin: auto;
+     
     }
     .icons{
-        margin-top: 20px;
-        width: 40px;
-        font-size: 0.6em;
-        justify-content:space-evenly; 
+        font-size: 1.5em;
+        margin: auto;
+        margin-bottom: 20px;
+    
+      
     }
     .helpContenedor{
         display: flex;
-        margin-left: 140px;
+        margin:auto;
         font-size: 0.8em;
     }
     .aboutContenedor{
         display: flex;
         font-size: 0.8em;
-        margin-left: 140px;
-        margin-top: 40px;
-        margin-bottom: 50px;
+        margin: auto;
     }
     .mobileContenedor{
         display: flex;
         font-size: 0.8em;
-        margin-left: 140px;
-        margin-right: 40px;
-        margin-top: 40px;
-        margin-bottom: 50px;
+        margin: auto;
     } 
     .contenedorFinal{
         display: flex;
+        flex-direction: column;
         margin-left:25px;
-        width:960px;
+        width:auto;
+        height: auto;
+    }
+    .contfinal{
+        display: flex;
     }
     .piePagina{
         font-size: 0.6em;
@@ -584,48 +593,42 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        justify-content: space-around;
-        width:380px;
-        height: 650px;
+        align-items: center;
         margin: auto;
+    }
+    .contfinal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .exery{
         display: flex;
         justify-content: center;
-        margin-left: -50px;
-        margin-top: -60px;
     }
     .exeryTitulo{
         font-size: 1.8em;
     }
     .icons{
-        margin-top: -10px;
-        width: 40px;
-        margin-left: 220px;
         gap: 5px;
         font-size: 0.8em;
-        justify-content:space-evenly; 
+        margin-bottom: 70px;
+
     }
     .helpContenedor{
         display: flex;
-        height: 30px;
-        margin-left: 120px;
         font-size: 0.8em;
     }
-    .help{
-        margin-top: 30px;
-    }
+
     .aboutContenedor{
         display: flex;
         font-size: 0.8em;
-        margin-left: 120px;
+        margin-right: 40px;
     }
     .mobileContenedor{
         display: flex;
         font-size: 0.8em;
-        margin-left: 120px;
-        margin-right: 40px;
-        margin-top: -40px;
+
     } 
     .piePagina{
         width: 220px;
@@ -633,17 +636,21 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 120px;
         font-size: 0.6em;
     }
     .arrow{
         margin: auto;
-        margin-top: -30px;
+        margin-top: -0px;
+
     }
     .piePagina{
        display: flex;
        text-align: center;
+       justify-content: center;
+       align-items: center;
        gap: 10px;
+       margin-left: 60px;
+  
     }
     
 }
