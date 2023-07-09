@@ -436,10 +436,17 @@
         flex-direction: column;
         width: 850px;
         margin: auto;
+
     }
     .cardUno{
         width: 850px;
         margin:auto;
+        padding-right: 100px;
+    }
+    .cardDos{
+        width: 850px;
+        margin:auto;
+        padding-right: 100px;
     }
     .ContenidoUno{
         display: flex; 
@@ -457,10 +464,13 @@
     .cardTres{
         width: 850px;
         margin:auto;
+        padding-right: 100px;
     }
     .cardCuatro{
         width: 850px;
         margin:auto; 
+        padding-right: 100px;
+    
     }
     .exery{
         display:flex;
@@ -555,6 +565,8 @@
         width: 200px;
         height: 500px;
         margin:auto;
+        padding-right: 0;
+  
     }
     .img1, .img2, .img3, .img4{
         width:320px;
