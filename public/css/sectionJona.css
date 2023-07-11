@@ -26,6 +26,7 @@
     font-size: 45px;
     align-items: start;
     color: black;
+    margin-top: 20px;
 }
 
 .descriptionJona{
@@ -104,7 +105,9 @@
     border: none;
     background-color: #FDAD82;
     position: absolute;
-    bottom: 1px
+    top: 1900px;
+   
+    
 }
 
 .allProductsJona:hover{
@@ -168,6 +171,7 @@
         display: flex;
         flex-direction: column;
         justify-content:center;
+        align-items: center;
     }
     .descriptionJona{
         display: none;
@@ -176,13 +180,29 @@
     .tituloJona{
         display: flex;
         flex-direction: column;
-        justify-content: right;
+        justify-content: center;
+        align-items: center;
+        margin-left: -150px;
     }
     .botonProductoJona{
         display: flex;
         flex-direction: column;
         margin-top: 20px;
-        margin-left: -100px;
-        justify-content: left;
+        margin-left: -230px;
+        justify-content: center;
+    }
+    .sectionFirmaJona{
+        margin: auto;
+    }
+    .lastJona{
+        margin: auto;
+    }
+    .allProductsJona{
+
+        width: 150px;
+
+    }
+    .btnAgregarJona{
+        top: 900px;
     }
 }
