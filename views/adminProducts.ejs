@@ -1,0 +1,40 @@
+<%-include('./partials/header.ejs')-%>
+<%-include('./partials/navbar.ejs')-%>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Descripcion</th>
+                    <th>Tipo</th>
+                    <th>Stock</th>
+                    <th>Precio</th>
+                    <th>
+                        <a href="/adminProducts/add" class="btn btn-block btn-success justify-self-center">Agregar</a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <%products.forEach(p=> {%>
+                    <tr>
+                        <td>
+                            <%= p.descripcion %>
+                        </td>
+                        <td>
+                            <%= p.tipo %>
+                        </td>
+                        <td>
+                            <%= p.stock %>
+                        </td>
+                        <td>
+                            <%= p.precio %>
+                        </td>
+                        <td>
+                            <a href="/adminProducts/edit/<%= p.id %>" class="btn btn-block btn-primary justify-self-center">Editar</a>
+                            <a href="/adminProducts/delete/<%= p.id %>" class="btn btn-block btn-danger justify-self-center">Eliminar</a>
+                        </td>
+                    </tr>
+                    <%})%>
+            </tbody>
+        </table>
+    </div>
+    <%-include('./partials/footer.ejs')-%>

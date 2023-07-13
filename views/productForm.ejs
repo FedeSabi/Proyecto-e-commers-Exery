@@ -1,0 +1,29 @@
+<%-include('./partials/header.ejs')-%>
+<%-include('./partials/navbar.ejs')-%>
+    <div class="container w-25">
+        <%- include('./partials/messages') -%>
+            <form action="/adminProducts/addOrEdit" method="post">
+                <input id="productId" name="productId" type="hidden" value="<%= product ? product.id : '' %>">
+
+                <div class="form-group px-0 pb-2">
+                    <input type="text" name="descripcion" id="" class="form-control" placeholder="Descripcion" required value="<%= product ? product.descripcion : '' %>" >
+                </div>
+                <div class="form-group px-0 pb-2">
+                    <input type="text" name="tipo" id="" class="form-control" placeholder="Tipo" required value="<%= product ? product.tipo : '' %> " >
+                </div>
+                <div class="form-group px-0 pb-2">
+                    <input type="number" name="stock" id="" class="form-control" placeholder="Stock" required value="<%= product ? product.stock : '' %>">
+                </div>
+                <div class="form-group px-0 pb-2">
+                    <input type="number" name="precio" id="" class="form-control" placeholder="Precio" min="0" step="0.01" required value="<%= product ? product.precio : '' %>">
+                    <!-- TODO que el precio pueda ser numero decimal . Listo-->
+                </div>
+                <div class="form-group px-0 pb-2">
+                    <input type="text" name="imagen" id="" class="form-control" placeholder="URL imagen" required value="<%= product ? product.imagen : '' %>">
+                </div>
+                <button type="submit" class="btn btn-success btn-block "><%= product ? 'Editar' : 'Agregar' %></button>
+
+            </div>
+            </form>
+    </div>
+    <%-include('./partials/footer.ejs')-%>

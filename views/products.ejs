@@ -1,0 +1,52 @@
+<%-include('./partials/header.ejs')-%>
+    <%-include('./partials/navbar.ejs')-%>
+        <div class="container">
+            <% for(var i=0; i < products.length; i=i+3 ) {%>
+                <div class="row">
+                    <div class="card " style="width:18rem;margin: 15px 50px">
+                        <img src="<%= products[i].imagen %>" class="card-img-top" alt="No tiene img">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <%= products[i].tipo %>
+                            </h5>
+                            <p class="card-text">
+                                <%= products[i].descripcion %>
+                            </p>
+                            <a href="/auth/carrito"
+                                class="btn btn-primary">Comprar</a><!-- en el boton deberia hacer q se agrege a un carrito y en la pag de carrito directamente hacer la compra -->
+                        </div>
+                    </div>
+                    <% if(products.length > i+1) {%>
+                        <div class="card " style="width:18rem; margin: 15px 50px">
+                            <img src="<%= products[i+1].imagen %>" class="card-img-top" alt="No tiene img">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <%= products[i].tipo %>
+                                </h5>
+                                <p class="card-text">
+                                    <%= products[i].descripcion %>
+                                </p>
+                                <a href="/auth/carrito"
+                                    class="btn btn-primary">Comprar</a><!-- en el boton deberia hacer q se agrege a un carrito y en la pag de carrito directamente hacer la compra -->
+                            </div>
+                        </div>
+                        <%}%>
+                            <% if(products.length> i+2) {%>
+                                <div class="card  " style="width:18rem; margin: 15px 50px">
+                                    <img src="<%= products[i+2].imagen %>" class="card-img-top" alt="No tiene img">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <%= products[i].tipo %>
+                                        </h5>
+                                        <p class="card-text">
+                                            <%= products[i].descripcion %>
+                                        </p>
+                                        <a href="/auth/carrito"
+                                            class="btn btn-primary">Comprar</a><!-- en el boton deberia hacer q se agrege a un carrito y en la pag de carrito directamente hacer la compra -->
+                                    </div>
+                                </div>
+                                <%}%>
+                </div>
+                <%}%>
+        </div>
+        <%-include('./partials/footer.ejs')-%>

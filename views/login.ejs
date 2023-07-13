@@ -1,0 +1,19 @@
+<%-include('./partials/header.ejs')-%>
+    <h1 class="text-center mt-5 mb-3">EXERY-Login</h1>
+    <div class="container w-25">
+        <%- include('./partials/messages') -%>
+            <form action="/auth/login" method="post">
+                <div class="form-group px-0 pb-2">
+                    <input type="email" name="email" id="" class="form-control" placeholder="E-mail" required>
+                </div>
+                <div class="form-group px-0 pb-2">
+                    <input type="password" name="password" id="" class="form-control" placeholder="password" required>
+                </div>
+                <div class="d-grid gap-1">
+                <a href="/forgot" class="btn btn-block btn-dark justify-self-center">Recuperar password</a><br>
+                <a href="/auth/register" class="btn btn-block btn-dark">Registrar</a><br>
+                <button type="submit" class="btn btn-dark btn-block ">Login</button>
+            </div>
+            </form>
+    </div>
+    <%-include('./partials/footer.ejs')-%>
