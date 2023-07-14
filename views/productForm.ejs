@@ -1,5 +1,5 @@
-<%-include('./partials/header.ejs')-%>
-<%-include('./partials/navbar.ejs')-%>
+<%-include('./template/header.ejs')-%>
+<%-include('./template/navbar.ejs')-%>
     <div class="container w-25">
         <%- include('./partials/messages') -%>
             <form action="/adminProducts/addOrEdit" method="post">
@@ -26,4 +26,4 @@
             </div>
             </form>
     </div>
-    <%-include('./partials/footer.ejs')-%>
+    <%-include('./template/footer.ejs')-%>

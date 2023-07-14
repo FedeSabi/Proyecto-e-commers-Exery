@@ -1,7 +1,7 @@
-<%-include('./partials/header.ejs')-%>
+<%-include('template/header.ejs')-%>
     <h1 class="text-center mt-5 mb-3">EXERY-Login</h1>
     <div class="container w-25">
-        <%- include('./partials/messages') -%>
+        <%- include('./template/messages') -%>
             <form action="/auth/login" method="post">
                 <div class="form-group px-0 pb-2">
                     <input type="email" name="email" id="" class="form-control" placeholder="E-mail" required>
@@ -16,4 +16,5 @@
             </div>
             </form>
     </div>
-    <%-include('./partials/footer.ejs')-%>
+</body>
+</html>
