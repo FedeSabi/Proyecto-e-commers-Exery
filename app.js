@@ -1,5 +1,4 @@
 import express from 'express';
-import chalk from 'chalk';
 import morgan from 'morgan';
 import path from 'path';
 import authRouter from './routers/authRouter.js';
@@ -26,11 +25,10 @@ app.use(morgan('tiny'));
 // middlerware para q lea archivos desde el body
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-/*
-//cookie de passport   // lo saque por me tiraba error!!!!!!!
+
+//cookie de passport   
 app.use(cookieParser());
-app.use(session({ secret: 'globomantics' }));
-*/
+
 
 //conectamos app.session formulada por IA!!!!!!!!!
 app.use(session({
@@ -42,23 +40,15 @@ app.use(session({
 // traigo la funcion de passport
 passportConfig(app);
 
-// para los mensajes flash connect
-app.use((req, res, next) => {
+// para los mensajes flash connect  (revisar que da error)
+app.use(flash());
+    app.use((req, res, next) => {
     res.locals.success_msg = req.flash('success_msg');
     res.locals.error_msg = req.flash('error_msg');
     res.locals.error = req.flash('error');
     res.locals.currentUser = req.user;
     next();
 });
-app.use(flash());
-
-//probando error de express session sacada de IA!!!!!!!!!!
-app.use(session({
-    secret: 'my-secret-key',
-    resave: false,
-    saveUninitialized: false
-  }));
-  
 
 
 //carpeta de uso estatico
@@ -74,7 +64,7 @@ app.set('views', __dirname + '/views')
 // rutas
 app.use('/auth', authRouter);
 app.use('/products', productsRouter);
-app.use('./adminProducts', adminProductsRouter);
+app.use('/adminProducts', adminProductsRouter);
 
 
 //rutas views index.ejs
@@ -116,23 +106,11 @@ app.use((req,res,next) => {
 app.listen(PORT,()=>{
     console.log('el servidor esta conectado en el puerto',PORT)
 })
-/*  // cambie el mongoose porque no funcionaba con ese codigo!!!!
-mongoose
+  // cambie el mongoose porque no funcionaba con ese codigo!!!!
+     mongoose
     .connect(process.env.DB)
     .then(mensaje => {
         console.log('DB CONECTADA')
     })
     .catch(error => console.log(error.stack));
 
-*/
-// conexion a Mongoose nueva (fijate que en mi laptop tengo que usar la IP para que me funcione el mongoDB)
-mongoose.connect('mongodb://127.0.0.1:27017', { useNewUrlParser: true, useUnifiedTopology: true })
-.then(() => {
-console.log('Conexión a la base de datos exitosa');
-
-
-    // Resto del código de tu aplicación
-  })
-  .catch((error) => {
-    console.error('Error al conectar a la base de datos:', error);
-  });

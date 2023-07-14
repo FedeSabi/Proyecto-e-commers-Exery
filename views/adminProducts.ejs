@@ -1,5 +1,5 @@
-<%-include('./template/header.ejs')-%>
-<%-include('./template/navbar.ejs')-%>
+<%-include('template/header.ejs')-%>
+
     <div>
         <table class="table">
             <thead>
@@ -30,11 +30,11 @@
                         </td>
                         <td>
                             <a href="/adminProducts/edit/<%= p.id %>" class="btn btn-block btn-primary justify-self-center">Editar</a>
-                            <a href="/adminProducts/delete/<%= p.id %>" class="btn btn-block btn-danger justify-self-center">Eliminar</a>
+                            <a href="/adminProducts/delete/<%= p.id %>" class="btn btn-block btn-dark justify-self-center">Eliminar</a>
                         </td>
                     </tr>
                     <%})%>
             </tbody>
         </table>
     </div>
-    <%-include('./template/footer.ejs')-%>
+  
