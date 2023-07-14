@@ -1,18 +1,63 @@
+import express from 'express';
+import chalk from 'chalk';
+import morgan from 'morgan';
+import path from 'path';
+import authRouter from './src/routers/authRouter.js';
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+import cookieParser from 'cookie-parser';
+import session from 'express-session';
+import passportConfig from './src/config/passport.js';
+import flash from 'connect-flash'
+import productsRouter from './src/routers/productsRouter.js';
+import adminProductsRouter from './src/routers/adminProductsRouter.js';
 
 
-const express = require ('express')
+
+dotenv.config({ path: `./.env` });
+
+const PORT = process.env.PORT || 3050;
+
+const __dirname = path.resolve();
 const app = express()
-const port = 3000
 
-//motor de plantillas
-app.set('view engine','ejs')
-app.set('views', __dirname + '/views')
+app.use(morgan('tiny'));
+
+// middlerware para q lea archivos desde el body
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+//cookie de passport
+app.use(cookieParser());
+app.use(session({ secret: 'globomantics' }));
+
+// traigo la funcion de passport
+passportConfig(app);
+
+// para los mensajes flash connect
+app.use((req, res, next) => {
+    res.locals.success_msg = req.flash(('success_msg'));
+    res.locals.error_msg = req.flash(('error_msg'));
+    res.locals.error = req.flash(('error'));
+    res.locals.currentUser = req.user;
+    next();
+});
+app.use(flash());
 
 //carpeta de uso estatico
 app.use(express.static('public'));
 app.use('/css',express.static(__dirname + 'public/css'))
 app.use('/js',express.static(__dirname + 'public/js'))
 app.use('/img',express.static(__dirname + 'public/img'))
+
+//motor de plantillas
+app.set('view engine','ejs')
+app.set('views', __dirname + '/views')
+
+// rutas
+app.use('/auth', authRouter);
+app.use('/products', productsRouter);
+app.use('/adminProducts', adminProductsRouter);
 
 //rutas views index.ejs
 app.get('/',(req,res)=>{
@@ -50,6 +95,13 @@ app.use((req,res,next) => {
 })
 })
 
-app.listen(port,()=>{
-    console.log('el servidor esta conectado en el puerto',port)
+app.listen(PORT,()=>{
+    console.log('el servidor esta conectado en el puerto',PORT)
 })
+
+mongoose
+    .connect(process.env.DB)
+    .then(mensaje => {
+        console.log('DB CONECTADA')
+    })
+    .catch(error => console.log(error.stack));
