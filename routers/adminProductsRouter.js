@@ -3,14 +3,6 @@ import Product from "../models/productModel.js";
 
 const adminProductsRouter = express.Router();
 
-// adminProductsRouter.use((req, res, next) => {
-//     if (req.user && req.user.role == 'admin') {
-//         next();
-//     } else {
-//         res.send('No tiene permisos para acceder a esta página.');
-//     }
-// });
-
 adminProductsRouter.route('/').get((req, res) => {
     (async function getProducts() {
         try {
