@@ -1,7 +1,7 @@
 <%-include('./template/header.ejs')-%>
-<%-include('./template/navbar.ejs')-%>
+<%-include('./template/navbar2.ejs')-%>
     <div class="container w-25">
-        <%- include('./partials/messages') -%>
+        <%- include('./template/messages') -%>
             <form action="/adminProducts/addOrEdit" method="post">
                 <input id="productId" name="productId" type="hidden" value="<%= product ? product.id : '' %>">
 
@@ -26,4 +26,3 @@
             </div>
             </form>
     </div>
-    <%-include('./template/footer.ejs')-%>
