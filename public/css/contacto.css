@@ -8,6 +8,10 @@ body{
     font-family: 'Roboto', sans-serif;
     padding: 0 1.5em;
 }
+.retorno{
+    display: flex;
+    justify-content: right;
+}
 .content{
     max-width: 1170px;
     margin-left: auto;
@@ -19,6 +23,8 @@ body{
     text-align: center;
     font-size: 3em;
     font-family: Squada One, Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+
 
 }
 .contact-side{
