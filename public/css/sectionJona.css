@@ -14,7 +14,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    color: white;
+    color: black;
     padding-left: 35px;
     margin: 4em;
 
@@ -23,7 +23,7 @@
 .tituloJona{
     display: flex;
     width: 40%;
-    font-size: 45px;
+    font-size: 65px;
     align-items: start;
     color: black;
     margin-top: 20px;
@@ -34,14 +34,16 @@
     display:flex;
     margin-top: 20px;
     color: black;
+    font-size: 20px;
 }
 
 .botonProductoJona{
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-self: Center;
+
 }
 
 .allProductsJona{
@@ -51,6 +53,7 @@
     margin-left: 10px;
     background-color: #FDAD82;
     padding: 5px 15px;
+    font-size:x-large;
 
 
 }
@@ -67,10 +70,12 @@
 
 .cardJona{
     width: 250px;
-   /* display: flex;*/
+   display: flex;
+   flex-direction: column;
     margin: 20px;
     border: none;
     transition: all 150ms;
+    position: relative;
 
 }
 
@@ -80,36 +85,37 @@
 }
 
 #corazon{
-   position: absolute;
-    left: 85%;
+    display: inline-grid;
     font-size: 1.5em;
-    z-index: 1;
+    z-index: 100;
     padding-right: 2px;
+    color: black;
+    padding-left: 210px;
 }
 
 .imagenJona{
     width: 100%;
-    position: relative;
 }
 
 .imagenIconoJona{
-    border: 1px solid gray;
     border-radius: 30px;
-    background-color: #aaaaaa;
+    color: black;
 }
 
 .btnAgregarJona{
-    margin: 5px;
-    align-self: flex-end;
+   margin: 5px;
     border-radius: 10px;
     border: none;
     background-color: #FDAD82;
+    color: black;
     position: absolute;
-    top: 1900px;
+    width: 13%;
+    height: 10%;
+    top: 80%;
+    left: 82%;
    
     
 }
-
 .allProductsJona:hover{
     background-color: whitesmoke;
     color: #FDAD82;
@@ -120,14 +126,14 @@
 #agregarJona{
     align-self: end;
     font-size: 1.5em;
-    padding: 5px;
+    padding: 5px; 
 }
 
 .precioJona{
-    margin: 5px 0px;
+     margin: 5px 0px;
     position: relative;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 
 }
 
@@ -164,6 +170,10 @@
 .firmaJona{
     font-size: 48px;
     font-family: 'Allura', cursiva;
+}
+
+span{
+    color: black;
 }
 
 @media (max-width:1150px){
