@@ -3,13 +3,13 @@ import Product from "../models/productModel.js";
 
 const adminProductsRouter = express.Router();
 
-// adminProductsRouter.use((req, res, next) => {
-//     if (req.user && req.user.role == 'admin') {
-//         next();
-//     } else {
-//         res.send('No tiene permisos para acceder a esta página.');
-//     }
-// });
+ adminProductsRouter.use((req, res, next) => {
+    if (req.user && req.user.role == 'admin') {
+         next();
+     } else {
+         res.send('No tiene permisos para acceder a esta página.');
+     }
+ });
 
 adminProductsRouter.route('/').get((req, res) => {
     (async function getProducts() {
@@ -53,7 +53,6 @@ adminProductsRouter.route('/addOrEdit').post((req, res) => {
                     }, 1500);
                 }
                 else{
-                    //TODO mostrar mensaje de error que no se encontró el product
                 }
             } catch (error) {
                 console.log(error);
@@ -84,7 +83,6 @@ adminProductsRouter.route('/edit/:id').get((req, res) => {
         try {
             const products = await Product.find({ _id: req.params.id });
             if (products != null && products.length > 0) {
-                //TODO validar que products tenga algo en el array
                 res.render('productForm', { product: products[0] })
             };
         } catch (error) {
