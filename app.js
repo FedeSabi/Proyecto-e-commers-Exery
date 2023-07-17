@@ -10,6 +10,7 @@ import passportConfig from './config/passport.js';
 import flash from 'connect-flash';
 import productsRouter from './routers/productsRouter.js';
 import adminProductsRouter from './routers/adminProductsRouter.js';
+import cartsRouter from './routers/cartRouter.js';
 
 
 
@@ -66,6 +67,7 @@ app.set('views', __dirname + '/views')
 app.use('/auth', authRouter);
 app.use('/products', productsRouter);
 app.use('/adminProducts', adminProductsRouter);
+app.use('/cart', cartsRouter);
 
 
 //rutas views index.ejs

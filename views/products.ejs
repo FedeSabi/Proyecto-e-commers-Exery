@@ -12,7 +12,7 @@
                             <p class="card-text">
                                 <%= products[i].descripcion %>
                             </p>
-                            <a href="/cart/add/<%= products._id %>"
+                            <a href="/cart/add/<%= products[i].id %>"
                                 class="btn btn-primary">Comprar</a><!-- en el boton deberia hacer q se agrege a un carrito y en la pag de carrito directamente hacer la compra -->
                         </div>
                     </div>
@@ -26,7 +26,7 @@
                                 <p class="card-text">
                                     <%= products[i].descripcion %>
                                 </p>
-                                <a href="/cart/add/<%= products._id %>"
+                                <a href="/cart/add/<%= products[i+1].id %>"
                                     class="btn btn-primary">Comprar</a><!-- en el boton deberia hacer q se agrege a un carrito y en la pag de carrito directamente hacer la compra -->
                             </div>
                         </div>
@@ -41,7 +41,7 @@
                                         <p class="card-text">
                                             <%= products[i].descripcion %>
                                         </p>
-                                        <a href="/cart/add/<%= products._id %>"
+                                        <a href="/cart/add/<%= products[i+2].id %>"
                                             class="btn btn-primary">Comprar</a><!-- en el boton deberia hacer q se agrege a un carrito y en la pag de carrito directamente hacer la compra -->
                                     </div>
                                 </div>
