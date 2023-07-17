@@ -21,10 +21,10 @@
                             <img src="<%= products[i+1].imagen %>" class="card-img-top" alt="No tiene img">
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    <%= products[i].tipo %>
+                                    <%= products[i+1].tipo %>
                                 </h5>
                                 <p class="card-text">
-                                    <%= products[i].descripcion %>
+                                    <%= products[i+1].descripcion %>
                                 </p>
                                 <a href="/cart/add/<%= products[i+1].id %>"
                                     class="btn btn-primary">Comprar</a><!-- en el boton deberia hacer q se agrege a un carrito y en la pag de carrito directamente hacer la compra -->
@@ -36,10 +36,10 @@
                                     <img src="<%= products[i+2].imagen %>" class="card-img-top" alt="No tiene img">
                                     <div class="card-body">
                                         <h5 class="card-title">
-                                            <%= products[i].tipo %>
+                                            <%= products[i+2].tipo %>
                                         </h5>
                                         <p class="card-text">
-                                            <%= products[i].descripcion %>
+                                            <%= products[i+2].descripcion %>
                                         </p>
                                         <a href="/cart/add/<%= products[i+2].id %>"
                                             class="btn btn-primary">Comprar</a><!-- en el boton deberia hacer q se agrege a un carrito y en la pag de carrito directamente hacer la compra -->

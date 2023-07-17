@@ -25,8 +25,8 @@ cartsRouter.get('/add/:productId', (req, res) => {
             
           }
 
-          var carts = await Cart.find({userId: req.user._id});
-          var cart = carts != null && carts.length > 0 ? carts[0] : { orders: [], userId: req.user._id };
+          var carts = await Cart.find({userId: req.user._id, estado: 'Abierto'});
+          var cart = carts != null && carts.length > 0 ? carts[0] : { orders: [], userId: req.user._id, estado: 'Abierto' };
   
           var objIndex = cart.orders.findIndex(x=>x.productId == productId);
 
@@ -46,6 +46,46 @@ cartsRouter.get('/add/:productId', (req, res) => {
       }
   })();
 });
-  
+
+cartsRouter.get('/showOrder', (req,res)=> {  
+  (async function getCart() {
+    try {
+        var carts = await Cart.find({userId: req.user._id, estado: 'Abierto'});
+        var cart = carts != null && carts.length > 0 ? carts[0] : { orders: [], userId: req.user._id, estado: 'Abierto' };
+
+        var cartToShow = {id: cart.id, orders: []};
+
+        for (let i = 0; i < cart.orders.length; i++) {
+         var products = await Product.find({ _id: cart.orders[i].productId });
+         
+         if (products != null && products.length > 0) {
+          cartToShow.orders.push({product: products[0], quantity: cart.orders[i].quantity});
+         }
+        }
+
+        res.render('productsCart', {cart: cartToShow})
+    } catch (error) {
+        console.log(error);
+    }
+  })();
+})
+
+cartsRouter.get('/close/:id', (req,res)=> {  
+  (async function closeCart() {
+    try {
+        var carts = await Cart.find({_id: req.params.id});
+       if(carts != null && carts.length > 0){
+        var cart = carts[0];
+
+        cart.estado = 'Cerrado';
+        await Cart.updateOne(cart);
+       }
+
+        res.render('closeCart')
+    } catch (error) {
+        console.log(error);
+    }
+  })();
+})
 
 export default cartsRouter;

@@ -1,0 +1,27 @@
+<%-include('template/header.ejs')-%>
+    <%-include('template/navbar2.ejs')-%>
+        <div class="container">
+            <% for(let i=0; i < cart.orders.length; i++ ) {%>
+                <div class="row">
+                    <div class="card " style="width:18rem;margin: 15px 50px">
+                        <img src="<%= cart.orders[i].product.imagen %>" class="card-img-top" alt="No tiene img">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <%= cart.orders[i].product.tipo %>
+                            </h5>
+                            <p class="card-text">
+                                <%= cart.orders[i].product.descripcion %>
+                            </p>
+                        <span>
+                            Precio: $<%= cart.orders[i].product.precio %>
+                        </span>
+                        <br />
+                        <span>
+                            Cantidad: <%= cart.orders[i].quantity %>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            <%}%>
+            <a href="/cart/close/<%= cart.id %>" class="btn btn-primary">Finalizar Compra</a>
+        </div>

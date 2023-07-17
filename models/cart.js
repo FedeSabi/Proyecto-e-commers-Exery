@@ -6,6 +6,7 @@ let cartScheme = new Schema({
         quantity: Number
     }],
     userId: Schema.Types.ObjectId,
+    estado: String
 });
 
 export default model('Cart', cartScheme)
