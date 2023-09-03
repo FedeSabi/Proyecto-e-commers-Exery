@@ -1,4 +1,4 @@
-# grupo-8-ecommers
+# Proyecto E-commerce Exery
 
 
 Descripción del proyecto de e-commerce:
