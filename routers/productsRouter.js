@@ -28,22 +28,6 @@ productsRouter.route('/').get((req, res) => {
     })();
 });
 
-// barra de busqueda queda por ver si la implementamos
 
-// productsRouter.route('/search').post((req, res) => {
-//     (async function getProducts() {
-//         try {
-//             let products = await Product.find({descripcion: req.body.partialDescription});
-//             if (products) {
-//                 if (req.user.role == 'user')
-//                     res.render('products', { products });
-//                 else if (req.user.role == 'admin')
-//                     res.render('adminProducts', { products });
-//             }
-//         } catch (error) {
-//             console.log(error);
-//         }
-//     })();
-// });
 
 export default productsRouter;
